@@ -1,0 +1,98 @@
+*{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+
+main{
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.cockapoo-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    display: block;
+    margin: 50px ;
+    border: 5px solid #e5e5e5;
+    margin: 30px 0 40px 50px;
+    padding: 10px 50px 40px 60px;
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2{
+    font-family: monospace;
+}
+
+ul li{
+    color:dodgerblue;
+}
+a{
+    font-size: 1.5em;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+.grid-container{
+    display: grid;
+    height: 700px;
+    width: 90%;
+    grid-gap: 10px;
+    background-color: #f9f9f9;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+}
+
+.grid-container > *{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.item-1{
+    background-color: red;
+}
+
+.item-2{
+    background-color: green;
+}
+
+.item-3{
+    background-color: blue;
+}
+
+.item-4{
+    background-color: firebrick;
+}
+
+footer{
+    text-align: center;
+    border-top: solid 5px red;
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    main{
+        width: 90%;
+        height: auto;
+    }
+    .grid-container {
+        width: 90%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 300px);
+        margin: 0 auto;
+
+    }
+  }
